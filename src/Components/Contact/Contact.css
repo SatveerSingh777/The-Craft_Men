@@ -1,0 +1,24 @@
+.Contact-section{
+    width: 100%;
+    /* height: 600px; */
+    background-color: #1c1c1c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Con-container{
+    width: 100%;
+    height: 100%;
+    /* border: 2px solid white; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+@media screen and (max-width: 668px) {
+    .Con-container{
+        flex-direction: column;
+    }
+}
