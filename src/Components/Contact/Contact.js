@@ -12,7 +12,7 @@ function Contact() {
 
             <p>E-Mail: <a href="mailto:Thecraftmen01@gmail.com?subject=Hello&body=How are you?" target="_blank" rel="noopener noreferrer">Thecraftmen01@gmail.com</a></p>
             <p><a
-              href={`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`}
+              href={`whatsapp://${phoneNumber}?text=${encodeURIComponent(message)}`}
               target="_blank"
               rel="noopener noreferrer"
               style={{ textDecoration: 'none', color: 'green' }}
