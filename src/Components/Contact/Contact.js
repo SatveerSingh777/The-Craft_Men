@@ -1,8 +1,15 @@
-import React from 'react'
-import './Contact.css'
+import React from 'react';
+import './Contact.css';
+
 function Contact() {
   const phoneNumber = "919877946435";
   const message = "Hello! I would like to connect with you.";
+
+  const isMobile = /Android|iPhone/i.test(navigator.userAgent);
+  const whatsappUrl = isMobile 
+    ? `whatsapp://send?phone=${phoneNumber}&text=${encodeURIComponent(message)}` // Opens in WhatsApp app
+    : `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`; // Opens in WhatsApp Web
+
   return (
     <>
       <section className="Contact-section">
@@ -11,20 +18,22 @@ function Contact() {
           <div className="contact">
 
             <p>E-Mail: <a href="mailto:Thecraftmen01@gmail.com?subject=Hello&body=How are you?" target="_blank" rel="noopener noreferrer">Thecraftmen01@gmail.com</a></p>
-            <p><a
-              href={`whatsapp://${phoneNumber}?text=${encodeURIComponent(message)}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: 'none', color: 'green' }}
-            >
-              Click to Chat on WhatsApp
-            </a></p>
+            <p>
+              <a
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: 'none', color: 'green' }}
+              >
+                Click to Chat on WhatsApp
+              </a>
+            </p>
 
           </div>
         </div>
       </section>
     </>
-  )
+  );
 }
 
-export default Contact
+export default Contact;
