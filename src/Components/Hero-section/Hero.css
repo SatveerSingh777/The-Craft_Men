@@ -112,9 +112,16 @@
 .Hero-img {
     width: 100%;
     height: 250px;
+    margin-top: 50px;
 }
 .Hero-img img {
     width: 250px;
     height: 200px;
+}
+.Hero-img img:hover {
+    width: 100%;
+    height: 300px;
+
+    cursor: pointer;
 }
 }
