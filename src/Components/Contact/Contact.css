@@ -17,6 +17,10 @@
     color: white;
 }
 
+a{
+    color: white;
+}
+
 @media screen and (max-width: 668px) {
     .Con-container{
         flex-direction: column;
