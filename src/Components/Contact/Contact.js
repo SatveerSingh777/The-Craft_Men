@@ -20,7 +20,7 @@ function Contact() {
         <div className="Con-container">
           <h1>THANK YOU ..</h1>
           <div className="contact">
-            <p>E-Mail: <a href="mailto:Thecraftmen01@gmail.com?subject=Hello&body=I would like to connect with you." target="_blank" rel="noopener noreferrer">Thecraftmen01@gmail.com</a></p>
+            <p>E-Mail: <a href="mailto:thecraftmen6@gmail.com?subject=Hello&body=I would like to connect with you." target="_blank" rel="noopener noreferrer">thecraftmen6@gmail.com</a></p>
             <p>
               <button
                 onClick={handleWhatsAppClick}
