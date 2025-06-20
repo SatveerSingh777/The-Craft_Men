@@ -20,7 +20,7 @@ function About() {
       
       </div> */}
       <div className="serve">
-        <h1>WE <br />SERVES</h1>
+        <h1>WHAT WE <br />DO??</h1>
         <ul>
           <li>Poster Making</li>
           <li>Logo Making</li>

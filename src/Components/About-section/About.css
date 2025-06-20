@@ -114,14 +114,17 @@
         text-align: center;
         width: 90%;
     }
-    .About-img {
-        width: 300px;
-        height: 300px;
+
+    .serve{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        flex-direction: column;
         
     }
-    .About-img img{
-        width: 200px;
-        height: 200px;
-        
+
+    .serve h1{
+        text-align: center;
     }
+    
 }
