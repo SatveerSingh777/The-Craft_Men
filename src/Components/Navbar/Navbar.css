@@ -5,14 +5,15 @@ nav{
     align-items: center;
     /* justify-content: space-evenly; */
     /* background-color: #2d2d34; */
-    background-color: #fcfcfc;
+    background-color: #000000;
     /* border: 2px solid black; */
 }
 
 .logo{
-    color: #2d2d34;
+    color: #ffffff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 25px;
+    font-size: 15px;
+    margin: 20px;
     margin-left: 50px;
 
 }
@@ -25,7 +26,7 @@ nav{
     margin-bottom: 0;
 }
 .logo:hover{
-    color: #ff8800;
+    color: #ffffff;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
 }

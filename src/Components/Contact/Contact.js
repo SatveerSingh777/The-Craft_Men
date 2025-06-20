@@ -27,7 +27,7 @@ function Contact() {
                 style={{
                   textDecoration: 'none',
                   color: 'white',
-                  backgroundColor: 'green',
+                  backgroundColor: '#571f7d',
                   padding: '10px',
                   borderRadius: '5px',
                   border: 'none',

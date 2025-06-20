@@ -10,8 +10,8 @@ function WorkCard(props) {
         <div>
             <div className="Work-card">
                 <div className="Work-img">
-                    <img src={props.img} alt="" />
-                <button onClick={openImage}>View</button>
+                    <img onClick={openImage} src={props.img} alt="" />
+                
                 </div>
             </div>
         </div>

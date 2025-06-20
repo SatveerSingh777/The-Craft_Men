@@ -1,6 +1,6 @@
 import React from 'react'
 import './About.css'
-import photo1 from '../Pictures/sit.png'
+// import photo1 from '../Pictures/Copilot_20250620_142100.png'
 function About() {
   return (
     <>
@@ -11,13 +11,24 @@ function About() {
 
         <div className="About-container">
       <div className="About-details">
-        <h1 >WE'RE <br />  DESIGNERS </h1>
-        <div className='About-para'><p>We are a team of three—engineers by foundation, designers by passion. With a deep understanding of functionality and aesthetics, we bridge the gap between technical precision and creative vision. Every project is a fusion of logic and artistry, where innovation drives design and engineering fuels imagination. Whether crafting brands, building experiences, or shaping the future, we dive into design with a problem-solving mindset and a commitment to excellence.
-        </p></div>
+        <h1 >WE'RE <br />ENGINEERS</h1>
+        <div className='About-para'><p>Engineers by foundation, designers by passion—we fuse logic and artistry to craft meaningful experiences. Driven by innovation, our team turns precision into imagination to shape brands, products, and the future.</p></div>
 
       </div>
-      <div className="About-img">
+      {/* <div className="About-img">
         <img src={photo1} alt=""/>
+      
+      </div> */}
+      <div className="serve">
+        <h1>WE <br />SERVES</h1>
+        <ul>
+          <li>Poster Making</li>
+          <li>Logo Making</li>
+          <li>Video Editing</li>
+          <li>Product Shoot</li>
+          <li>Account Handling: Youtube , Instagram</li>
+          <li>Ads Run</li>
+        </ul>
       </div>
       </div>
       </section>

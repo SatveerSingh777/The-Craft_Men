@@ -11,8 +11,8 @@ function Navbar() {
     <>
      <nav>
         <div className="logo">
-            <h1>THE</h1>
-            <p>Craft Men</p>
+            <h1>THE CRAFT MEN</h1>
+            
         </div>
           {/* <button onClick={contact}>Contact-Us</button> */}
         </nav> 
