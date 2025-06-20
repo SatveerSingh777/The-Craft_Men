@@ -98,7 +98,7 @@
 
 @media screen and (max-width: 1164px) {
     .About-container{
-        width: 100%;
+        width: 95%;
         flex-direction: column;
     }
     .About-details {
