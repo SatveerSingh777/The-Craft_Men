@@ -93,7 +93,7 @@
   
   .Work-toggle-button:hover {
     background-color: #ffffff;
-    color: #571f7d;
+    color: white;
     box-shadow: 5px 4px 12px #571f7d;
     transition: all 0.3s ease;
   }
