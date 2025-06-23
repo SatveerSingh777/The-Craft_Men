@@ -7,6 +7,7 @@ import s1 from '../Pictures/Food Thumbnail.png';
 import s2 from '../Pictures/Beauty.png';
 import s3 from '../Pictures/MakeUp.png';
 import s4 from '../Pictures/Nails.png';
+import s5 from '../Pictures/BOOK VIDEO-Cover.jpg';
 
 function Vidoes() {
   const [showAll, setShowAll] = useState(false);
@@ -19,6 +20,7 @@ function Vidoes() {
     { label: s2, url: 'https://drive.google.com/file/d/1K1kecDrOTPhUAB7opmFTBA1QjWODOTB9/view?usp=drive_link' },
     { label: s3, url: 'https://drive.google.com/file/d/1cJAWr6Z_-2YlrIIbrmRdVvsDBpz3iL42/view?usp=drive_link' },
     { label: s4, url: 'https://drive.google.com/file/d/1vrTBepr2HN0pDd0uPT3v2L8_k1Pb4SKw/view?usp=drive_link' },
+    { label: s5, url: 'https://drive.google.com/file/d/1HdHn-_SNf-LVCILVwo17AKVf1kZt169J/view?usp=drive_link' },
   ];
 
   const visibleItems = showAll ? items : isNarrow ? items.slice(0, 1) : items.slice(0, 3);
@@ -76,6 +78,7 @@ function Vidoes() {
       <div className='Work-container2' ref={containerRef}>
         {visibleItems.map((item, index) => (
           <div key={index} className='snap-wrapper'>
+            
             <VideoCard2 img={item.label} href={item.url} />
           </div>
         ))}
