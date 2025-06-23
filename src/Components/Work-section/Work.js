@@ -17,9 +17,10 @@ import s12 from '../Pictures/Wedding card.png';
 import s13 from '../Pictures/Save the date.png';
 import s14 from '../Pictures/RSVP.png';
 import s15 from '../Pictures/ThankYou Card.png';
+import s16 from '../Pictures/The Immigration Lounge III.png';
 
 const workImages = [
-  s3, s1, s9, s6, s4, s2, s7, s5, s8, s10, s11, s12, s13, s14,s15
+  s3, s1, s9, s6, s4, s2, s7, s5, s8, s10, s11, s12, s13, s14,s15 ,s16
 ];
 
 function Work() {
