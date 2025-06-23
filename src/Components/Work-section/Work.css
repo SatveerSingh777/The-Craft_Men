@@ -81,6 +81,9 @@
   }
   
   .Work-toggle-button {
+    /* position:absolute; */
+    /* top: 50px; */
+    /* right: 5%; */
     padding: 0.6rem 1.2rem;
     background-color: #571f7d;
     color: #fff;

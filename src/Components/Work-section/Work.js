@@ -31,7 +31,7 @@ function Work() {
   return (
     <section className='Work-section'>
       <div className='Work-heading'>
-        <h1>OUR WORK</h1>
+        <h1>OUR DESIGNS</h1>
       </div>
 
       <div className='Work-container'>
@@ -39,12 +39,12 @@ function Work() {
           <WorkCard key={index} img={img} />
         ))}
       </div>
-
       <div className='Work-button-wrapper'>
         <button onClick={() => setShowAll(prev => !prev)} className='Work-toggle-button'>
           {showAll ? 'View Less' : 'View More'}
         </button>
       </div>
+
     </section>
   );
 }
