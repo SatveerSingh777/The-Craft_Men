@@ -7,7 +7,7 @@ import s2 from '../Pictures/Serum in insta ratio.png';
 import s3 from '../Pictures/Travel with maditate.png';
 import s4 from '../Pictures/Visa Agency 2.png';
 import s5 from '../Pictures/Wine.png';
-import s6 from '../Pictures/airpods2.png';
+import s6 from '../Pictures/The Immigration Lounge III.png';
 import s7 from '../Pictures/pizza 2.png';
 import s8 from '../Pictures/your thoughts in insta ratio.png';
 import s9 from '../Pictures/Children Astronaut book cover II.png';
@@ -17,7 +17,7 @@ import s12 from '../Pictures/Wedding card.png';
 import s13 from '../Pictures/Save the date.png';
 import s14 from '../Pictures/RSVP.png';
 import s15 from '../Pictures/ThankYou Card.png';
-import s16 from '../Pictures/The Immigration Lounge III.png';
+import s16 from '../Pictures/airpods2.png';
 
 const workImages = [
   s3, s1, s9, s6, s4, s2, s7, s5, s8, s10, s11, s12, s13, s14,s15 ,s16
