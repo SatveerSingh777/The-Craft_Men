@@ -10,6 +10,7 @@ import s4 from '../Pictures/Nails.png';
 
 function Vidoes() {
   const [showAll, setShowAll] = useState(false);
+  const [isNarrow, setIsNarrow] = useState(window.innerWidth <= 1164);
   const containerRef = useRef(null);
   const currentIndex = useRef(0);
 
@@ -20,7 +21,13 @@ function Vidoes() {
     { label: s4, url: 'https://drive.google.com/file/d/1vrTBepr2HN0pDd0uPT3v2L8_k1Pb4SKw/view?usp=drive_link' },
   ];
 
-  const visibleItems = showAll ? items : items.slice(0, 3);
+  const visibleItems = showAll ? items : isNarrow ? items.slice(0, 1) : items.slice(0, 3);
+
+  useEffect(() => {
+    const handleResize = () => setIsNarrow(window.innerWidth <= 1164);
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   useEffect(() => {
     const container = containerRef.current;
@@ -29,12 +36,11 @@ function Vidoes() {
     const card = container.firstChild;
     if (!card) return;
 
-    const cardWidth = card.offsetWidth + 16; // 16px is the gap between cards
-    const totalScrollWidth = cardWidth * visibleItems.length;
+    const cardWidth = card.offsetWidth + 16;
+    const totalWidth = cardWidth * visibleItems.length;
     let scrolling = false;
 
-    // Only enable scroll if there's overflow
-    if (totalScrollWidth <= container.offsetWidth) return;
+    if (totalWidth <= container.offsetWidth) return;
 
     const handleWheel = (e) => {
       if (!container.contains(e.target)) return;
@@ -54,7 +60,7 @@ function Vidoes() {
 
       setTimeout(() => {
         scrolling = false;
-      }, 400); // allow animation to complete
+      }, 400);
     };
 
     container.addEventListener('wheel', handleWheel, { passive: false });
@@ -77,12 +83,13 @@ function Vidoes() {
         <button
           onClick={() => {
             setShowAll(prev => !prev);
-            currentIndex.current = 0; // Reset scroll position
+            currentIndex.current = 0;
             if (containerRef.current) {
               containerRef.current.scrollTo({ left: 0, behavior: 'smooth' });
             }
           }}
           className='Work-toggle-button'
+         
         >
           {showAll ? 'View Less<<' : 'View More>>'}
         </button>
