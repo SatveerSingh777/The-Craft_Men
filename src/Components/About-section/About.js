@@ -29,7 +29,7 @@ function About() {
             </div>
 
             <div className="choose">
-              <h1>WHY CHOOSE <br />USE ??</h1>
+              <h1>WHY CHOOSE <br />US ??</h1>
               <ul>
                 <li>Premium quality work</li>
                 <li>Professional Approach</li>
