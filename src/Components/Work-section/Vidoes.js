@@ -18,9 +18,9 @@ function Vidoes() {
   const items = [
     { label: s1, url: 'https://drive.google.com/file/d/1ck-3jRSOZ28m6tXwQu_PWbvbMHdrvapi/view?usp=drive_link' },
     { label: s2, url: 'https://drive.google.com/file/d/1K1kecDrOTPhUAB7opmFTBA1QjWODOTB9/view?usp=drive_link' },
-    { label: s3, url: 'https://drive.google.com/file/d/1cJAWr6Z_-2YlrIIbrmRdVvsDBpz3iL42/view?usp=drive_link' },
+    { label: s5, url: 'https://drive.google.com/file/d/1cJAWr6Z_-2YlrIIbrmRdVvsDBpz3iL42/view?usp=drive_link' },
     { label: s4, url: 'https://drive.google.com/file/d/1vrTBepr2HN0pDd0uPT3v2L8_k1Pb4SKw/view?usp=drive_link' },
-    { label: s5, url: 'https://drive.google.com/file/d/1HdHn-_SNf-LVCILVwo17AKVf1kZt169J/view?usp=drive_link' },
+    { label: s3, url: 'https://drive.google.com/file/d/1HdHn-_SNf-LVCILVwo17AKVf1kZt169J/view?usp=drive_link' },
   ];
 
   const visibleItems = showAll ? items : isNarrow ? items.slice(0, 1) : items.slice(0, 3);

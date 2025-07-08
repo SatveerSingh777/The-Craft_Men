@@ -23,7 +23,7 @@ import s18 from '../Pictures/Study Visa uk.png';
 import s19 from '../Pictures/Study abroad g.png';
 
 const workImages = [
-  s4, s6, s17,s18,s19,s9, s1, s3, s2, s7, s5, s8, s10, s11, s12, s13, s14,s15 ,s16
+  s4, s6, s17,s18,s19,s10, s8,s16, s3, s2, s7, s5, s1, s9, s11, s12, s13, s14,s15 
 ];
 
 function Work() {
